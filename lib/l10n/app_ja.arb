@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "デーティング体験を読み込んでいます...",
+    "mainTitle": "新しい人々と出会い、理想の相手を見つけましょう！",
+    "googlePlayTitle": "Google Playでダウンロード",
+    "appleStoreTitle": "App Storeでダウンロード",
+    "scanInstructions": "QRコードをスキャンしてアプリをダウンロードし、つながりを始めましょう！",
+    "privacyPolicy": "プライバシーポリシー",
+    "copyright": "© {year} YourWave. 全著作権所有。",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

@@ -1,0 +1,3 @@
+arb-dir: lib/l10n # Directorio donde guardarás los archivos .arb
+template-arb-file: app_en.arb # Archivo de plantilla (inglés)
+output-localization-file: app_localizations.dart # Archivo de salida generado

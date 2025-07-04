@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "جاري تحميل تجربة المواعدة الخاصة بك...",
+    "mainTitle": "تعرف على أشخاص جدد وابحث عن شريكك المثالي!",
+    "googlePlayTitle": "تنزيل من Google Play",
+    "appleStoreTitle": "تنزيل من App Store",
+    "scanInstructions": "امسح رموز QR لتنزيل تطبيقنا وبدء التواصل!",
+    "privacyPolicy": "سياسة الخصوصية",
+    "copyright": "© {year} YourWave. كل الحقوق محفوظة.",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "正在加载您的约会体验...",
+    "mainTitle": "认识新朋友，找到理想的伴侣！",
+    "googlePlayTitle": "在 Google Play 上下载",
+    "appleStoreTitle": "在 App Store 上下载",
+    "scanInstructions": "扫描二维码下载我们的应用，开始连接吧！",
+    "privacyPolicy": "隐私政策",
+    "copyright": "© {year} YourWave. 版权所有。",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

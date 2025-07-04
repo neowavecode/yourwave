@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "आपके डेटिंग अनुभव को लोड किया जा रहा है...",
+    "mainTitle": "नए लोगों से मिलें और अपना आदर्श साथी खोजें!",
+    "googlePlayTitle": "Google Play पर डाउनलोड करें",
+    "appleStoreTitle": "App Store पर डाउनलोड करें",
+    "scanInstructions": "हमारा ऐप डाउनलोड करने और कनेक्ट करना शुरू करने के लिए QR कोड स्कैन करें!",
+    "privacyPolicy": "गोपनीयता नीति",
+    "copyright": "© {year} YourWave. सर्वाधिकार सुरक्षित।",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

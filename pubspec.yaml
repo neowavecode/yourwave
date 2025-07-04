@@ -1,0 +1,37 @@
+name: web
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Dependencias para internacionalización
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.2 # <--- VERSIÓN CORREGIDA
+
+  qr_flutter: ^4.1.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+
+flutter:
+  # Activa la generación automática de código para la internacionalización
+  generate: true
+
+  uses-material-design: true
+
+  assets:
+    - assets/icon_android.png
+    - assets/applebadge.png
+    - assets/googlebadge.png

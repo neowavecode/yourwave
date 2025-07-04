@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "Carregando sua experiência de namoro...",
+    "mainTitle": "Conheça novas pessoas e encontre seu par ideal!",
+    "googlePlayTitle": "Baixar na Google Play",
+    "appleStoreTitle": "Baixar na App Store",
+    "scanInstructions": "Leia os códigos QR para baixar nosso aplicativo e começar a se conectar!",
+    "privacyPolicy": "Política de Privacidade",
+    "copyright": "© {year} YourWave. Todos os direitos reservados.",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

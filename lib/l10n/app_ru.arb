@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "Загрузка вашего опыта знакомств...",
+    "mainTitle": "Знакомьтесь с новыми людьми и найдите свою идеальную пару!",
+    "googlePlayTitle": "Загрузить в Google Play",
+    "appleStoreTitle": "Загрузить в App Store",
+    "scanInstructions": "Отсканируйте QR-коды, чтобы загрузить наше приложение и начать общаться!",
+    "privacyPolicy": "Политика конфиденциальности",
+    "copyright": "© {year} YourWave. Все права защищены.",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}

@@ -1,0 +1,11 @@
+{
+    "appTitle": "YourWave",
+    "loadingMessage": "Chargement de votre expérience de rencontre...",
+    "mainTitle": "Rencontrez de nouvelles personnes et trouvez votre partenaire idéal !",
+    "googlePlayTitle": "Télécharger sur Google Play",
+    "appleStoreTitle": "Télécharger sur l'App Store",
+    "scanInstructions": "Scannez les codes QR pour télécharger notre application et commencer à vous connecter !",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "© {year} YourWave. Tous droits réservés.",
+    "privacyPolicyUrl": "assets/politica_de_privacidad_en.html"
+}
