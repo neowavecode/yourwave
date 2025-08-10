@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // El título de la app ahora se obtiene de las localizaciones
       onGenerateTitle: (context) => AppLocalizations.of(context)!.appTitle,
       theme: ThemeData(
         primarySwatch: _createMaterialColor(const Color(0xFF40E0D0)),
@@ -29,10 +28,8 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Inter',
         useMaterial3: true,
       ),
-      // --- Configuración de Internacionalización ---
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      // -----------------------------------------
       home: const SplashScreen(),
     );
   }
@@ -120,7 +117,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
             ),
             const SizedBox(height: 20),
             Text(
-              // Texto internacionalizado
               AppLocalizations.of(context)!.loadingMessage,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(color: Colors.white),
             ),
@@ -152,7 +148,9 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   late Animation<double> _rightCardFadeAnimation;
   late Animation<double> _bottomTextFadeAnimation;
 
-  final String playStoreUrl = 'https://play.google.com/store/apps/details?id=com.yourcompany.yourapp';
+  // ================== URL ACTUALIZADA ==================
+  final String playStoreUrl = 'https://play.google.com/store/apps/details?id=com.neowavecode.yourwave&pcampaignid=web_share';
+  // =====================================================
   final String appleStoreUrl = 'https://apps.apple.com/us/app/your-app-name/id1234567890';
 
   @override
@@ -218,7 +216,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           children: [
             Image.asset('assets/icon_android.png', height: 30, width: 30),
             const SizedBox(width: 8),
-            // Texto internacionalizado
             Text(AppLocalizations.of(context)!.appTitle, style: const TextStyle(color: Colors.white)),
           ],
         ),
@@ -250,7 +247,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       child: SlideTransition(
                         position: _titleSlideAnimation,
                         child: Text(
-                          // Texto internacionalizado
                           AppLocalizations.of(context)!.mainTitle,
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.headlineMedium?.copyWith(
@@ -283,7 +279,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Text(
-                                      // Texto internacionalizado
                                       AppLocalizations.of(context)!.googlePlayTitle,
                                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                         color: Colors.black87,
@@ -323,7 +318,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Text(
-                                      // Texto internacionalizado
                                       AppLocalizations.of(context)!.appleStoreTitle,
                                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
                                         color: Colors.black87,
@@ -356,7 +350,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                     FadeTransition(
                       opacity: _bottomTextFadeAnimation,
                       child: Text(
-                        // Texto internacionalizado
                         AppLocalizations.of(context)!.scanInstructions,
                         textAlign: TextAlign.center,
                         style: Theme.of(context).textTheme.bodyLarge?.copyWith(
@@ -378,20 +371,37 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  TextButton(
-                    onPressed: () => _launchUrl(AppLocalizations.of(context)!.privacyPolicyUrl),
-                    child: Text(
-                      // Texto internacionalizado
-                      AppLocalizations.of(context)!.privacyPolicy,
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                        color: Colors.white,
-                        decoration: TextDecoration.underline,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      TextButton(
+                        onPressed: () => _launchUrl(AppLocalizations.of(context)!.privacyPolicyUrl),
+                        child: Text(
+                          AppLocalizations.of(context)!.privacyPolicy,
+                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                color: Colors.white,
+                                decoration: TextDecoration.underline,
+                              ),
+                        ),
                       ),
-                    ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Text("-", style: TextStyle(color: Colors.white70)),
+                      ),
+                      TextButton(
+                        onPressed: () => _launchUrl('https://yourwaveapp.com/assets/faq.html'),
+                        child: Text(
+                          AppLocalizations.of(context)!.faq,
+                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                                color: Colors.white,
+                                decoration: TextDecoration.underline,
+                              ),
+                        ),
+                      ),
+                    ],
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    // Texto internacionalizado con variable
                     AppLocalizations.of(context)!.copyright(DateTime.now().year),
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(color: Colors.white70),
                     textAlign: TextAlign.center,
