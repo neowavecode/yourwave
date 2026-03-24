@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YourWave - ¡Conoce gente nueva!">
+    <title>YourWave - ¡Conoce gente nueva!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-waves">
+        <!-- SVG waves representing the original design -->
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+            <!-- Dark Teal Base -->
+            <rect width="1440" height="900" fill="#205f63" />
+            <!-- Red blob top left -->
+            <path d="M0,0 L700,0 C600,300 900,200 600,500 C400,700 -50,400 0,400 Z" fill="#982c2f"/>
+            <!-- Light Teal Wave -->
+            <path d="M0,500 C300,450 400,800 800,500 C1100,300 1300,700 1440,500 L1440,900 L0,900 Z" fill="#449d9e"/>
+            <!-- Light Gray Wave -->
+            <path d="M0,800 C400,650 600,950 1000,750 C1200,600 1350,850 1440,750 L1440,900 L0,900 Z" fill="#b1b5b4"/>
+        </svg>
+    </div>
+
+    <div class="content-wrapper">
+        <header class="top-nav">
+            <div class="nav-left">
+                <img src="logo.png" alt="YourWave Logo" class="logo">
+                <span class="brand-name">YourWave</span>
+            </div>
+            <div class="nav-right" style="position: relative;">
+                <i class="fas fa-language lang-icon" style="margin-right: 5px;"></i>
+                <select id="lang-select" style="background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; padding: 3px 5px; outline: none; font-family: 'Nunito', sans-serif; cursor: pointer;">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="es" style="color: black;">Español</option>
+                    <option value="fr" style="color: black;">Français</option>
+                    <option value="de" style="color: black;">Deutsch</option>
+                    <option value="it" style="color: black;">Italiano</option>
+                    <option value="pt" style="color: black;">Português</option>
+                    <option value="ru" style="color: black;">Русский</option>
+                    <option value="zh" style="color: black;">中文</option>
+                    <option value="ja" style="color: black;">日本語</option>
+                    <option value="ar" style="color: black;">العربية</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="hero-section">
+            <h1 class="main-title" data-i18n="title">¡Conoce gente nueva!</h1>
+            
+            <div class="app-showcase">
+                <div class="phone-mockup">
+                    <img src="10.png" alt="YourWave App" class="phone-img">
+                </div>
+                
+                <div class="download-card">
+                    <div class="qr-placeholder">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://play.google.com/store/apps/details?id=com.neowavecode.yourwave" alt="Scan QR Code" class="qr-img">
+                    </div>
+                    <p class="download-text" data-i18n="download">Descarga en Google Play</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.neowavecode.yourwave" target="_blank" rel="noopener noreferrer">
+                        <img src="googlebadge.png" alt="Get it on Google Play" class="google-badge">
+                    </a>
+                </div>
+            </div>
+
+            <p class="bottom-callout" data-i18n="bottom_text">¡Escanea el código QR para descargar nuestra aplicación y empezar a conectar!</p>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-left">
+                <a href="politica_de_privacidad_en.html" class="footer-link" data-i18n="privacy">Política de Privacidad</a>
+                <a href="faq.html" class="footer-link">FAQ</a>
+                <a href="safety.html" class="footer-link">Safety</a>
+            </div>
+            <div class="footer-center">
+                <p data-i18n="rights">&copy; 2026 YourWave. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://play.google.com/store/apps/details?id=com.neowavecode.yourwave" target="_blank" aria-label="Google Play Store"><i class="fab fa-google-play"></i></a>
+                <a href="https://www.youtube.com/@YourWaveApp" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/yourwaveapp" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        const translations = {
+            es: { title: "¡Conoce gente nueva!", download: "Descarga en Google Play", bottom_text: "¡Escanea el código QR para descargar nuestra aplicación y empezar a conectar!", privacy: "Política de Privacidad", rights: "&copy; 2026 YourWave. Todos los derechos reservados." },
+            en: { title: "Meet new people!", download: "Get it on Google Play", bottom_text: "Scan the QR code to download our app and start connecting!", privacy: "Privacy Policy", rights: "&copy; 2026 YourWave. All rights reserved." },
+            fr: { title: "Faites de nouvelles rencontres !", download: "Disponible sur Google Play", bottom_text: "Scannez le code QR pour télécharger l'application et commencer à vous connecter !", privacy: "Politique de confidentialité", rights: "&copy; 2026 YourWave. Tous droits réservés." },
+            de: { title: "Lerne neue Leute kennen!", download: "Jetzt bei Google Play", bottom_text: "Scanne den QR-Code, um unsere App herunterzuladen und loszulegen!", privacy: "Datenschutzrichtlinie", rights: "&copy; 2026 YourWave. Alle Rechte vorbehalten." },
+            it: { title: "Incontra nuove persone!", download: "Scarica su Google Play", bottom_text: "Scansiona il codice QR per scaricare la nostra app e iniziare a connetterti!", privacy: "Informativa sulla privacy", rights: "&copy; 2026 YourWave. Tutti i diritti riservati." },
+            pt: { title: "Conheça pessoas novas!", download: "Disponível no Google Play", bottom_text: "Escaneie o código QR para baixar nosso aplicativo e começar a se conectar!", privacy: "Política de Privacidade", rights: "&copy; 2026 YourWave. Todos os direitos reservados." },
+            ru: { title: "Знакомьтесь с новыми людьми!", download: "Доступно в Google Play", bottom_text: "Отсканируйте QR-код, чтобы скачать наше приложение и начать общение!", privacy: "Политика конфиденциальности", rights: "&copy; 2026 YourWave. Все права защищены." },
+            zh: { title: "认识新朋友！", download: "在Google Play上获取", bottom_text: "扫描二维码下载我们的应用程序并开始建立联系！", privacy: "隐私政策", rights: "&copy; 2026 YourWave. 保留所有权利。" },
+            ja: { title: "新しい人と出会おう！", download: "Google Playで手に入れよう", bottom_text: "QRコードをスキャンしてアプリをダウンロードし、つながりを始めましょう！", privacy: "プライバシーポリシー", rights: "&copy; 2026 YourWave. 無断複写・転載を禁じます。" },
+            ar: { title: "تعرف على أشخاص جدد!", download: "تنزيل من Google Play", bottom_text: "امسح رمز الاستجابة السريعة لتنزيل تطبيقنا والبدء في التواصل!", privacy: "سياسة الخصوصية", rights: "&copy; 2026 YourWave. جميع الحقوق محفوظة." }
+        };
+        
+        let userLang = navigator.language.slice(0, 2);
+        if(!translations[userLang]) userLang = 'en';
+        
+        const langSelect = document.getElementById('lang-select');
+        langSelect.value = userLang;
+        
+        function applyLanguage(lang) {
+            const t = translations[lang];
+            if(!t) return;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if(t[key]) el.innerHTML = t[key];
+            });
+            document.documentElement.lang = lang;
+            
+            if(lang === 'ar') {
+                document.body.style.direction = 'rtl';
+            } else {
+                document.body.style.direction = 'ltr';
+            }
+        }
+        
+        applyLanguage(userLang);
+        
+        langSelect.addEventListener('change', (e) => {
+            applyLanguage(e.target.value);
+        });
+    </script>
+</body>
+</html>
